@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /*background-image: url("ban.jpg");*/
+  }
+  
+  .login-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password a:hover {
+    color: #0056b3;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .login-container.active .overlay {
+    opacity: 1;
+  }
+  
+  .login-container.active .login-box {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+  }
+
+
+
+
+
+.card-container {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlays button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overlays button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.card-image:hover .overlays {
+    opacity: 1;
+}
+
+.details {
+    padding: 10px 0;
+}
+
+.ratings {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+.star {
+    margin-right: 2px;
+}
+
+.rating-number {
+    margin-left: 5px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart-btn, .wishlist-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-to-cart-btn:hover, .wishlist-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        max-width: 100%;
+    }
+}
+
+  
+
+
+
+
+
+
+
+
+.seller-profile {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  max-height: 100%; 
+}
+
+
+
+.seller-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seller-header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.seller-name {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.seller-location {
+  color: #666;
+  font-size: 14px;
+}
+
+.seller-stats {
+  margin-top: 10px;
+}
+
+.seller-stats p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.star {
+  color: #f39c12;
+  font-size: 18px;
+}
+
+.seller-description {
+  margin-bottom: 20px;
+}
+
+.seller-description h3 {
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.seller-description p {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.seller-products {
+  margin-bottom: 20px;
+}
+
+.seller-products h3 {
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.seller-contact {
+  margin-bottom: 20px;
+}
+
+.seller-contact h3 {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.seller-contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.seller-contact ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.seller-contact ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.seller-contact ul li a:hover {
+  color: #f39c12;
+}

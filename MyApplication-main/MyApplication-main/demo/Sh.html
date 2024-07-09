@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Product List</title>
+  <link rel="stylesheet" href="sub.css">
+</head>
+<body>
+  <div class="product-list">
+    <div class="product-item">
+      <div class="product-image">
+        <img src="img/shoe-1.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h3 class="product-title">Shoes</h3>
+        <p class="product-description" style="font-size: 24px;">CMF by Nothing Neckband Pro 50dB Active Noise Cancellation, Smart Dial Design, <br>37 Hrs playtime Bluetooth Headset  (Dark Grey, In the Ear)</p>
+        <p class="product-description" style="color:palevioletred; font-size: 20px;">4.29,933 Ratings & 923 Reviews</p>
+        <p class="product-price" >Special price<br>$3000&nbsp;&nbsp;&nbsp; <span style="color: green;">28% Off<span></p>
+
+          <h3 class="product-title">Available offers</h3>
+
+<p>Bank OfferGet ₹25 Instant Discount on first Flipkart UPI transaction on order of ₹200 and aboveT&C</p><br>
+
+<P>Bank Offer5% Cashback on Flipkart Axis Bank CardT&C</p><br>
+
+<p>Bank OfferFlat ₹1,250 off on HDFC Bank Credit Card EMI Txns, Tenure: 6 and 9 months, Min Txn Value: ₹15,000T&C</P><br>
+
+<P>Special PriceGet extra 28% off (price inclusive of cashback/coupon)T&C</p><br>
+        <p class="delivery-info">Estimated Delivery: 2-3 days</p>
+        <button class="add-to-cart-btn">BUY NOW</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="add-to-cart-btn">ADD TO CART</button>
+      </div>
+    </div>
+
+    
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productTitle = button.parentElement.querySelector('.product-title').textContent;
+      alert(`Successfully..!!`);
+    });
+  });
+});
+
+  </script>
+</body>
+</html>

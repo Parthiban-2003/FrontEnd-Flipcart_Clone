@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card Example</title>
+  <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="phone.jfif" alt="Product Image">
+        </div>
+        <div class="details">
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="rating-number">(5)</span>
+          </div>
+          <h3 class="card-title">VIVO phone</h3>
+          <p class="card-description">Vivo phones model are used now a days more peoples used them.</p>
+          <p class="card-description">Many features are added to Vivo phones, making them increasingly popular.</p>
+          <p class="card-price">$3000</p>
+          <div class="action-buttons">
+            <button class="add-to-cart-btn">Add to Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="wishlist-btn">&#x2665; Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="bag.jfif" alt="Product Image">
+        </div>
+        <div class="details">
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="rating-number">(4)</span>
+          </div>
+          <h3 class="card-title">Bages</h3>
+          <p class="card-description">Many breands bags are availables and added to many features.</p>
+          <p class="card-description">Many features are added to apple breands, making them increasingly popular.</p>
+          <p class="card-price">$300</p>
+          <div class="action-buttons">
+            <button class="add-to-cart-btn">Add to Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="wishlist-btn">&#x2665; Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="shoe.jpg" alt="Product Image">
+        </div>
+        <div class="details">
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="rating-number">(3)</span>
+          </div>
+          <h3 class="card-title">Shoes</h3>
+          <p class="card-description">Its kind of many shoes are availables.</p>
+          <p class="card-description">Many features are added to walk in smoothly, making them increasingly popular.</p>
+          <p class="card-price">$400</p>
+          <div class="action-buttons">
+            <button class="add-to-cart-btn">Add to Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="wishlist-btn">&#x2665; Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+
+  <script>
+   
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', function() {
+
+    const productName = button.getAttribute('data-product');
+
+    alert(`Added Successfully to cart!`);
+  });
+});
+
+const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+wishlistButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const productName = button.getAttribute('data-product');
+    alert(`Added Successfully to wishlist!`);
+  });
+});
+
+  </script>
+</body>
+</html>
